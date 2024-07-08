@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.homesection{
+    width: 100%;
+    height: 100vh;
+}
+
+#logo{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(72, 72, 237);
+}
+
+.navbar-nav{
+    margin-left: 60px;
+    margin-top: 7px;
+}
+
+.nav-items .nav-link{
+    margin-left: 15px;
+    font-weight: bold;
+    gap: 2rem;
+    font-size: 16px;
+    transition: 0,5s ease;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* Home section */
+
+.home{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+.home .img{
+    flex: 1 1 400px;
+}
+
+.home .img img{
+    width: 70%;
+    margin-left: 30px;
+}
+
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 45px;
+}
+
+.home .content h5{
+    color: black;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home .content h3{
+    font-size: 50px;
+    color: black;
+}
+
+.home .content h3 span{
+    color: rgb(73, 73, 232);
+}
+
+.changecontent::after{
+    content:' ';
+    color: rgb(93, 93, 211);
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 20s infinite linear;
+}
+
+@keyframes changetext {
+    0%{content: "Front-End Developer";}
+    16%{content: "Back-End Developer";}
+    32%{content: "Full stack Developer";}
+    48%{content: "Data Analyst";} 
+    64%{content: "Python Developer";}
+    80%{content: "SQL Developer";}   
+    100%{content: "Youtuber";}
+}
+
+.home .content p{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#btn1{
+    width: 150px;
+    height: 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: #4895ef;
+    border: 2px solid #4895ef;
+    background: transparent;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#btn1:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:844px){
+    .homesection{
+        height: 146vh;
+    }
+    .home .content{
+        margin-top: 50px;
+    }
+    
+}
+
+
+@media screen and (max-width:650px){
+    .homesection{
+        height: 138vh;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .homesection{
+        height: 110vh;
+    }
+}
+
+
+/* About section */
+#about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about .card img{
+    background-color: grey;
+    border: 2px solid black;
+}
+
+#about h3{
+    font-weight: bold;
+    border-bottom: 2px solid #4895ef;
+    width: 150px;
+}
+#about h5{
+    font-weight: bold;
+}
+
+#about p{
+    font-size: 15px;
+}
+
+#about h2 span{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #4895ef;
+}
+
+#btn2{
+    width: 160px;
+    height: 38px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #4895ef;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:987px){
+    #about p{
+        font-size: 10px;
+    } 
+}
+
+@media screen and (max-width:767px){
+    #about{
+        height: 150vh;
+    }
+    #about p{
+        font-size: 17px;
+    } 
+}
+
+@media screen and (max-width:500px){
+    #about{
+        height: 120vh;
+    } 
+}
+
+#skills{
+    width: 100%;
+    height: 80vh;
+}
+#skills h3{
+    width: 130px;
+    padding-top: 130px;
+    border-bottom: 2px solid #4895ef;
+    font-weight: bold;
+}
+
+#skills .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#skills .card:hover{
+    background-color: rgb(228, 207, 207);
+}
+
+#skills .card i{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+
+
+
+#skills .card h2{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.hr{
+    margin-top: 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #4895ef;
+}
+
+
+/* contact */
+
+#contact{
+    width: 100%;
+    height: 100vh;
+}
+
+#contact h1{
+    border-bottom: 2px solid #4895ef;
+    width: 300px;
+    padding-top: 100px;
+}
+
+#contact input{
+    width: 420px;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #4895ef;
+}
+
+#contact textarea{
+    background: transparent;
+    border: 2px solid #4895ef;
+    margin-top: 20px;
+}
+
+#btncontact{
+    width: 420px;
+    height: 38px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    color: #4895ef;
+    border: 2px solid #4895ef;
+    margin-top: 30px;
+}
+
+#contact i{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.social-links i{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 995px){
+    #contact input{
+        width: 350px;
+    }
+    #contact textarea{
+        width: 350px;
+    }
+    #contact #btncontact{
+        width: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 376px){
+    #contact input{
+        width: 300px;
+    }
+    #contact textarea{
+        width: 300px;
+    }
+    #contact #btncontact{
+        width: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 320px){
+    #contact input{
+        width: 230px;
+    }
+    #contact textarea{
+        width: 230px;
+    }
+    #contact #btncontact{
+        width: 230px;
+    }
+    
+}
+
+
+/*footer*/
+
+#footer{
+    width: 100%;
+}
+#footer{
+    padding-top: 30px;
+}
+.icons i{
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.copyright{
+    margin-top: 20px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.arrow{
+    position: fixed;
+    border-radius: 50px;
+    color: #4895ef;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    text-shadow: 1px 1px 1px black;
+}
